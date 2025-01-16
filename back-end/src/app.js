@@ -10,6 +10,7 @@ app.use(express.json())
 app.get('/prueba/get', (req, res) => {
     conexion.query('select * from test', (err, res) => {
         if(err){
+            console.log(err)
             res.send(`Error al realizar la conexión: ${err}`)
         }else{
             res.send(`Consulta a la base de datos realizada con éxito: ${res.rows}`)
