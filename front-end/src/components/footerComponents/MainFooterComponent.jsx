@@ -3,7 +3,7 @@ import React from 'react'
 function MainFooterComponent(props) {
     
     const peticion = () => {
-        fetch('https://prueba-despliegue-fullstack-pern.onrender.com/prueba/get')
+        fetch('https://prueba-despliegue-fullstack-pern-api.onrender.com/prueba/get')
             .then((res) => res.text())
             .then((data) => {
                 console.log(`Respuesta del servidor: ${data}`)
