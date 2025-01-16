@@ -8,6 +8,7 @@ function MainFooterComponent(props) {
             .then((data) => {
                 console.log(`Respuesta del servidor: ${data}`)
             })
+            .catch((error) => console.error(`Error en la solicitud: ${error}`))
     }
     return (
         <>
