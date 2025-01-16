@@ -1,5 +1,4 @@
 import express from 'express'
-import conexion from './conexion.js'
 import cors from 'cors'
 
 const app = express()
@@ -8,14 +7,8 @@ app.use(cors({
 }))
 app.use(express.json())
 app.get('/prueba/get', (req, res) => {
-    conexion.query('select * from test', (err, res) => {
-        if(err){
-            console.log(err)
-            res.send(`Error al realizar la conexión: ${err}`)
-        }else{
-            res.send(`Consulta a la base de datos realizada con éxito: ${res.rows}`)
-        }
-    })
+    
+    res.send('Respuesta de prueba/get')
 })
 
 const PORT = process.env.PORT || 3000
