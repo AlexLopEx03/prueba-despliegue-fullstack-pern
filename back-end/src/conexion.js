@@ -1,5 +1,5 @@
-import {Pool} from 'pg'
-
+import pkg from 'pg'
+const { Pool } = pkg
 const conexion = new Pool({
     host: 'db.prueba-despliegue-fullstack-pern.supabase.co',
     user: 'postgres',
