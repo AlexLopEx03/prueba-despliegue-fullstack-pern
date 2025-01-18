@@ -1,14 +1,10 @@
 import pkg from 'pg'
 const { Pool } = pkg
 const conexion = new Pool({
-    host: 'db.prueba-despliegue-fullstack-pern.supabase.co',
-    user: 'postgres',
+    host: 'aws-0-eu-central-1.pooler.supabase.com',
+    port: 6543,
+    database: 'postgres',
+    user: 'postgres.kfrqojnqvjlxdiiffugk',
     password: 'uTn3DCGjOuTO3uDh',
-    port: 5432,
-    database: 'prueba-despliegue-fullstack-pern',
-    ssl: {
-        rejectUnauthorized: false
-    }
 })
-
 export default conexion

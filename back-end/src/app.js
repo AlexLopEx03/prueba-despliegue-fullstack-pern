@@ -6,9 +6,15 @@ app.use(cors({
     origin: 'https://prueba-despliegue-fullstack-pern.onrender.com'
 }))
 app.use(express.json())
+
 app.get('/prueba/get', (req, res) => {
-    
-    res.send('Respuesta de prueba/get')
+    conexion.connect((err, client, release) => {
+        if (err) {
+            res.send('Error en la conexión', err.stack)
+        }else{
+            res.send('Conexión exitosa')
+        }
+    })
 })
 
 const PORT = process.env.PORT || 3000
