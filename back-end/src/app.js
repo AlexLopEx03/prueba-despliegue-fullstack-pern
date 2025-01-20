@@ -6,7 +6,7 @@ app.use(cors({origin: 'https://prueba-despliegue-fullstack-pern.onrender.com'}))
 //app.use(express.json())
 app.disable('x-powered-by')
 
-app.get('/prueba/get', (req, res) => {
+app.get('/prueba', (req, res) => {
     conexion.connect((err, client, release) => {
         if (err) {
             res.send('Error en la conexión', err.stack)

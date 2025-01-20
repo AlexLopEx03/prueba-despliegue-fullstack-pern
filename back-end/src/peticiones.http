@@ -1,0 +1,8 @@
+### Extensión REST Client
+
+### Consulta local al servidor
+GET http://localhost:3000/prueba
+
+### Consulta al servidor
+
+GET https://prueba-despliegue-fullstack-pern-api.onrender.com/prueba
