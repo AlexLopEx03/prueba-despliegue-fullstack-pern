@@ -1,1 +1,1 @@
-https://prueba-despliegue-fullstack-pern.onrender.com
+https://prueba-pern.onrender.com
