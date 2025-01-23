@@ -2,7 +2,7 @@ import express from 'express'
 import cors from 'cors'
 import conexion from './conexion.js'
 const app = express()
-app.use(cors({origin: 'https://prueba-despliegue-fullstack-pern.onrender.com'}))
+app.use(cors({origin: 'https://prueba-pern.onrender.com'}))
 //app.use(express.json())
 app.disable('x-powered-by')
 

@@ -5,4 +5,4 @@ GET http://localhost:3000/prueba
 
 ### Consulta al servidor
 
-GET https://prueba-despliegue-fullstack-pern-api.onrender.com/prueba
+GET https://prueba-pern-api.onrender.com/prueba
